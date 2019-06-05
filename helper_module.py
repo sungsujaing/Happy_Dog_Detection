@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from keras import backend as K
 
 from sklearn.metrics import confusion_matrix
 
@@ -40,3 +41,13 @@ def confusion_matrix_plot(y_true,y_pred,model_name):
     plt.title('Correct prediction rate (%) of ' + model_name)
     sns.barplot(np.arange(len(np.unique(y_true))),np.diag(confusion_mtx_normalized)*100)
     plt.xlabel('Classes')
+
+def print_train_num_param(model):
+    trainable_count = int(np.sum([K.count_params(p) for p in set(model.trainable_weights)]))
+    print('Trainable params: {:,}'.format(trainable_count))
+
+def print_valid_test_score(model,X_valid,y_valid,X_test,y_test):
+    valid_loss,valid_accuracy = model.evaluate(X_valid, y_valid)
+    test_loss,test_accuracy = model.evaluate(X_test, y_test)
+    print("Valid: accuracy = %f  ;  loss = %f" % (valid_accuracy, valid_loss))
+    print("Test: accuracy = %f  ;  loss = %f" % (test_accuracy, test_loss))
