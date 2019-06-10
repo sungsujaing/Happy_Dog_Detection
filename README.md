@@ -15,6 +15,7 @@ The dataset was obtained from online with minimal pre-processing steps, thus con
 <p align="center">
 <img src="Readme_images/training_sample_example.png" width="700"></p>
 </p>
+
 ### Test on Lucky
 <p align="center">
 <img src="Readme_images/new_image_result.png" width="700"></p>
