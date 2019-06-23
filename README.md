@@ -1,11 +1,11 @@
 # Smiling_Dog_Detection
 
-This project aims to build a simple image classifier that differentiate happy dogs from sad dogs.
+This project aims to build a simple image classifier that differentiates happy dogs from sad dogs.
 Step by step model building processes are explored.
 The best model is used to see if Lucky is happy or sad.
 
 ## Version 2
-The model from verion 1 suffered from overfitting.
+The model from version 1 suffered from overfitting.
 The model has been improved by making the structure less complex and by adding more data augmentation.
 
 ### Hyperparam search
@@ -16,13 +16,13 @@ Hyperparameters (especially lr and batch size) were searched for small epochs to
 
 ### Model learning curve
 The model seems to handle overfitting issue much better compared to the previous version.
-It exhibits a much improved accuracy of **~ 90%** on the test set.
+It exhibits a much-improved accuracy of **~ 90%** on the test set.
 <p align="center">
 <img src="Readme_images/learning_curve_v2.png" width="700"></p>
 </p>
 
 ### Mistakes by the model
-Some wrongly labeled test set images were visualized to track down the ~ 10% error.
+Some wrongly labelledtest set images were visualized to track down the ~ 10% error.
 <p align="center">
 <img src="Readme_images/wrong_label_test_image_v2.png" width="700"></p>
 </p>
