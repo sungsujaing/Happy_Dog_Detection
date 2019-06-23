@@ -22,7 +22,7 @@ It exhibits a much-improved accuracy of **~ 90%** on the test set.
 </p>
 
 ### Mistakes by the model
-Some wrongly labelledtest set images were visualized to track down the ~ 10% error.
+Some wrongly labelled test set images were visualized to track down the ~ 10% error.
 <p align="center">
 <img src="Readme_images/wrong_label_test_image_v2.png" width="700"></p>
 </p>
