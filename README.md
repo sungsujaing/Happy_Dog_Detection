@@ -7,7 +7,7 @@ The best model is used to see if Lucky is happy or sad.
 ## Version 3 (Ongoing)
 Prebuilt YOLO model (sources: [darkflow](https://github.com/thtrieu/darkflow) and [YOLO](https://pjreddie.com/darknet/yolo/)) is being customized to localize dogs in the given image.
 For this project, the pretrained weights are being used, but in the next version, new weights is planned to be trained to improve the accuracy of the target detection.
-Nonetheless, the **HappyDogClassifier" built in Version 2 will be integrated to this detection model to achieve the final goal of the project.
+Nonetheless, the **HappyDogClassifier** built in Version 2 will be integrated to this detection model to achieve the final goal of the project.
 
 ## Version 2
 The model from version 1 suffered from overfitting.
