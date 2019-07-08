@@ -16,6 +16,7 @@ Ongoing:
 Will be implemented to a real-time module. 
 
 ***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on a YouTube video (detecting only **Happy**)
+*Video source: [here](https://www.youtube.com/watch?v=0lEUiQEDUHM)*
 <p align="center">
 <img src="HDD_testing.gif" width="700"></p>
 </p>
