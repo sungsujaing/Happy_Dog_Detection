@@ -15,9 +15,13 @@ In the testing version:
 Ongoing:
 Will be implemented to a real-time module. 
 
-***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on a YouTube video
-[![](Readme_images/thumbnail.jpg)](HDD_testing.avi)
-***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on images
+***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on a YouTube video (detecting only **Happy**)
+<p align="center">
+<img src="HDD_testing.gif" width="700"></p>
+</p>
+
+
+***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on images (detecting both **Happy and Sad**)
 <p align="center">
 <img src="Readme_images/HappyDogDetection_example.png" width="700"></p>
 </p>
