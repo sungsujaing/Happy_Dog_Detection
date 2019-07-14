@@ -34,7 +34,7 @@ Hyperparameters (especially lr and batch size) were searched for small epochs to
 </p>
 
 ### Model learning curve
-The model seems to handle overfitting issue much better compared to the previous version. It exhibits a much-improved accuracy of **~90%** on the test set.
+The model seems to handle overfitting issue much better compared to the previous version. It exhibits a much-improved accuracy of **~** **90%** on the test set.
 <p align="center">
 <img src="Readme_images/learning_curve_hdc_v2.png" width="700"></p>
 </p>
