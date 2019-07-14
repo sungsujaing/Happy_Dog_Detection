@@ -1,62 +1,58 @@
 # Happy_Dog_Detection
 
-This project aims to build a simple detector that localize and classify happy dogs in real-time!
-Step by step model building processes are explored.
+This project aims to build an image detector that localize and classify happy dogs in real-time!
+Step by step model building processes are explored in this project.
 The best model is used to see if Lucky is happy or sad.
 
-## Version 3 (Ongoing)
+## HappyDogDetector Version 1 (HDD_v1)
 Prebuilt YOLO model (sources: [darkflow](https://github.com/thtrieu/darkflow) and [YOLO](https://pjreddie.com/darknet/yolo/)) is being customized to localize happy dogs in the given image.
-For this project, the pretrained weights are being used, but in the next version, new weights is planned to be trained to improve the accuracy of the target detection.
+The **HappyDogClassifier_v2** was successfully integrated to the customized YOLO detection model to localize/classify HappyDogs from the given images/videos.
 
-In the testing version:
-* The **HappyDogDetector_v2 classifier** is being successfully integrated to the customized YOLO detection model to localize/classify HappyDogs from the given images.
-* Initial testings on YouTube videos are undergoing.
-
-Ongoing:
-Will be implemented to a real-time module. 
-
-***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on a YouTube video (detecting only **Happy**)
+### Running on a video (detecting only **Happy**)
 *Video source: [here](https://www.youtube.com/watch?v=0lEUiQEDUHM)*
 <p align="center">
-<img src="HDD_testing.gif" width="700"></p>
+<img src="Readme_images/hdd_v1_videotesting.gif" width="700"></p>
 </p>
 
-
-***Current HappyDogDetector prototype (YOLO + HappyDogDetector_v2 classifier)*** on images (detecting both **Happy and Sad**)
+### Running on images (detecting both **Happy and Sad**)
 <p align="center">
-<img src="Readme_images/HappyDogDetection_example.png" width="700"></p>
+<img src="Readme_images/hdd_v1_example.png" width="700"></p>
 </p>
 
-## Version 2
-The model from version 1 suffered from overfitting.
+### Upcoming for HDD_v2
+* New weights are planned to be trained only to localize a face of a dog to improve the accuracy of the model.
+* Will be implemented to a real-time module. 
+
+## HappyDogClassifier Version 2 (HDC_v2)
+The model from HDC_v1 suffered from overfitting.
 The model has been improved by making the structure less complex and by adding more data augmentation.
 
 ### Hyperparam search
 Hyperparameters (especially lr and batch size) were searched for small epochs to optimize the model.
 <p align="center">
-<img src="Readme_images/lr_search_v2.png" width="700"></p>
+<img src="Readme_images/lr_search_hdc_v2.png" width="700"></p>
 </p>
 
 ### Model learning curve
 The model seems to handle overfitting issue much better compared to the previous version.
 It exhibits a much-improved accuracy of **~ 90%** on the test set.
 <p align="center">
-<img src="Readme_images/learning_curve_v2.png" width="700"></p>
+<img src="Readme_images/learning_curve_hdc_v2.png" width="700"></p>
 </p>
 
 ### Mistakes by the model
 Some wrongly labelled test set images were visualized to track down the ~ 10% error.
 <p align="center">
-<img src="Readme_images/wrong_label_test_image_v2.png" width="700"></p>
+<img src="Readme_images/wrong_label_test_image_hdc_v2.png" width="700"></p>
 </p>
 
 ### Test on Lucky
 The model predictions are well aligned with my intuition.
 <p align="center">
-<img src="Readme_images/new_image_result_v2.png" width="700"></p>
+<img src="Readme_images/new_image_result_hdc_v2.png" width="700"></p>
 </p>
 
-## Version 1
+## HappyDogClassifier Version 1 (HDC_v1)
 
 Various resnet-like custom models and Resnet50 transfer-learned model have been tested. 
 In general, models could achieve ~ 80% accuracy on the test set when tuned properly. 
@@ -66,7 +62,7 @@ The dataset was obtained from online with minimal pre-processing steps, thus con
 ### Model learning curve
 The model started to overfit after ~ 30 epochs of training. The best model was chosen from there by early stopping the learning.
 <p align="center">
-<img src="Readme_images/learning_curve_v1.png" width="700"></p>
+<img src="Readme_images/learning_curve_hdc_v1.png" width="700"></p>
 </p>
 
 ### Test on Lucky
