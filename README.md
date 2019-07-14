@@ -8,13 +8,13 @@ The best model is used to see if Lucky is happy or sad.
 Prebuilt YOLO model (sources: [darkflow](https://github.com/thtrieu/darkflow) and [YOLO](https://pjreddie.com/darknet/yolo/)) is being customized to localize happy dogs in the given image.
 The **best model from hdc_v2** was successfully integrated to the customized YOLO detection model to localize/classify HappyDogs from the given images/videos.
 
-### Running on a video (detecting only **Happy**)
+### Running on a video (detecting only Happy)
 *Video source: [here](https://www.youtube.com/watch?v=0lEUiQEDUHM)*
 <p align="center">
 <img src="Readme_images/hdd_v1_videotesting.gif" width="700"></p>
 </p>
 
-### Running on images (detecting both **Happy and Sad**)
+### Running on images (detecting both Happy and Sad)
 <p align="center">
 <img src="Readme_images/hdd_v1_example.png" width="700"></p>
 </p>
@@ -34,8 +34,7 @@ Hyperparameters (especially lr and batch size) were searched for small epochs to
 </p>
 
 ### Model learning curve
-The model seems to handle overfitting issue much better compared to the previous version.
-It exhibits a much-improved accuracy of **~ 90%** on the test set.
+The model seems to handle overfitting issue much better compared to the previous version. It exhibits a much-improved accuracy of **~90%** on the test set.
 <p align="center">
 <img src="Readme_images/learning_curve_hdc_v2.png" width="700"></p>
 </p>
