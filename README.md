@@ -72,4 +72,4 @@ Somewhat agreeable results.
 
 [1]: https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/HappyDogClassifier_v1.ipynb
 [2]: https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/HappyDogClassifier_v2.ipynb
-[3]: https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/HappyDogDetector_v1.ipynb
+[3]: https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/custom_darkflow/HappyDogDetector_v1.ipynb
