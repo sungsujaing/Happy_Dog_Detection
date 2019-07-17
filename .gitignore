@@ -3,4 +3,15 @@ downloads
 not_tracked_on_git
 __pycache__
 SEAN_README.txt
-custom_darkflow
+
+custom_darkflow/*.pyc
+custom_darkflow/bin/
+custom_darkflow/darkflow/cython_utils/*.pyd
+custom_darkflow/darkflow/cython_utils/*.c
+custom_darkflow/darkflow.egg-info/
+custom_darkflow/build/
+custom_darkflow/ckpt/*
+custom_darkflow/.coveragerc
+custom_darkflow/.travis.yml
+custom_darkflow/flow
+custom_darkflow/test
