@@ -19,9 +19,19 @@ The **best model from hdc_v2** was successfully integrated to the customized YOL
 <img src="Readme_images/hdd_v1_example.png" width="700"></p>
 </p>
 
+---
 ### Upcoming for HDD_v2
-* New weights are planned to be trained only to localize a face of a dog to improve the accuracy of the model.
-* Will be implemented to a real-time module. 
+* **Problem** with the HDD_v1: The YOLO detector feeds a dog bounding box to the HDC_v2 whether or not a dog is facing forward.
+* A new detector model will be trained **based on a custom dataset** to localize a face of a dog (along with the whole body) to improve the accuracy of the integrated HDC_v2.
+* Currently, under the labelling process; *two classes: 'dog' (whole body) and 'face' (classifiable face for HDC_v2)* 
+<p align="center">
+<img src="Readme_images/hdd_v2_labelling_example.png" width="700"></p>
+</p>
+
+* If the accuracy of face detection is ***satisfactory***, HDC_v3 will be retrained based on the face of a dog (excluding bodies).
+* If the accuracy of face detection is ***not satisfactory***, a new detector model will be trained to localize classifiable (i.e. facing forward) and non-classifiable (i.e. facing backward) dogs (whole body) to integrate with HDD_v2. 
+* The integrated model will be implemented to a real-time module. 
+---
 
 ## [HappyDogClassifier Version 2 (HDC_v2)][2]
 The model from HDC_v1 suffered from overfitting.
