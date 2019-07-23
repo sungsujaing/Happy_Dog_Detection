@@ -22,15 +22,22 @@ The **best model from hdc_v2** was successfully integrated to the customized YOL
 ---
 ### Upcoming for HDD_v2
 * **Problem** with the HDD_v1: The YOLO detector feeds a dog bounding box to the HDC_v2 whether or not a dog is facing forward.
-* A new detector model will be trained **based on a custom dataset** to localize a face of a dog (along with the whole body) to improve the accuracy of the integrated HDC_v2.
-* Currently, under the labelling process; *two classes: 'dog' (whole body) and 'face' (classifiable face for HDC_v2)* 
+* A new detector model will be trained **based on a custom dataset** to localize classifiable dogs from non-classifiable ones to improve the accuracy of the integrated HDC_v2.
+* Currently, under the labelling process; *two classes: 'classifiable dog (dd)' and 'non-classifiable dogs' (d)* 
 <p align="center">
-<img src="Readme_images/hdd_v2_labelling_example.png" width="700"></p>
+<img src="Readme_images/custom_YOLO_labelling_example.png" width="700"></p>
 </p>
 
-* If the accuracy of face detection is ***satisfactory***, HDC_v3 will be retrained based on the face of a dog (excluding bodies).
-* If the accuracy of face detection is ***not satisfactory***, a new detector model will be trained to localize classifiable (i.e. facing forward) and non-classifiable (i.e. facing backward) dogs (whole body) to integrate with HDD_v2. 
-* The integrated model will be implemented to a real-time module. 
+* If the accuracy of the custom YOLO detection is satisfactory, the model will be integrated with HDC_v2 into HDD_v2. 
+* The integrated model will be implemented to a real-time module.
+
+#### [Current stage of the custom YOLO detector](https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/custom_darkflow/Custom_YOLO_classifiable_dog_detection.ipynb)
+<p align="center">
+<img src="Readme_images/custom_YOLO_output_example.png" width="700"></p>
+</p>
+
+---
+
 ---
 
 ## [HappyDogClassifier Version 2 (HDC_v2)][2]
