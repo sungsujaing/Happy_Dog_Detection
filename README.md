@@ -31,12 +31,10 @@ The **best model from hdc_v2** was successfully integrated to the customized YOL
 * If the accuracy of the custom YOLO detection is satisfactory, the model will be integrated with HDC_v2 into HDD_v2. 
 * The integrated model will be implemented to a real-time module.
 
-#### [Current stage of the custom YOLO detector](https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/custom_darkflow/Custom_YOLO_classifiable_dog_detection.ipynb)
+#### [Current stage of the custom YOLO detector](https://github.com/sungsujaing/Happy_Dog_Detection/blob/master/custom_darkflow/Custom_YOLO_classifiable_dog_detection.ipynb) (with 450 images and 30 epochs training)
 <p align="center">
-<img src="Readme_images/custom_YOLO_output_example.png" width="700"></p>
+<img src="Readme_images/custom_YOLO_output_example.png" width="650"></p>
 </p>
-
----
 
 ---
 
